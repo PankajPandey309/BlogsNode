@@ -10,7 +10,7 @@ const app = express();
 const DBUI = "mongodb+srv://Pankaj:secretpassword@cluster0.anx3x.mongodb.net/node?retryWrites=true&w=majority";
 mongoose.connect(DBUI).then((result) => {
     //listen for request
-    app.listen(3000);
+    app.listen(process.env.PORT || 5000)
 });
 //register view engine. lloks for default in 'views' folder
 app.set('view engine','ejs');
