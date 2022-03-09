@@ -7,7 +7,7 @@ const blogRoutes = require('./routes/blogRoutes');
 //create a instance of express app 
 const app = express();
 
-const DBUI = "mongodb+srv://pankaj:pankaj@cluster0.fgwan.mongodb.net/node?retryWrites=true&w=majority";
+const DBUI = "mongodb+srv://Pankaj:secretpassword@cluster0.anx3x.mongodb.net/node?retryWrites=true&w=majority";
 mongoose.connect(DBUI).then((result) => {
     //listen for request
     app.listen(3000);
